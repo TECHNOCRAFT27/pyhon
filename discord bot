@@ -1,0 +1,73 @@
+import discord 
+import os
+from keep_alive import keep_alive
+
+client=discord.Client()
+
+
+
+@client.event 
+async def on_ready():
+   print(" we log in")
+
+@client.event
+async def on_message(message):
+  if message.author == client.user:
+    return
+
+#wishing 
+  
+  if message.content.startswith('hello'):
+    await message.channel.send('https://tenor.com/bghIj.gif')
+  elif message.content.startswith('hey'):
+    await message.channel.send('https://tenor.com/vCKs.gif')
+  
+  elif message.content.startswith('hi'):
+    await message.channel.send('https://tenor.com/oX8p.gif')
+
+  elif message.content.startswith('bye'):
+    await message.channel.send('https://tenor.com/QxTI.gif')
+  
+  elif message.content.startswith('cry'):
+    await message.channel.send('https://tenor.com/o7YK.gif')
+
+  elif message.content.startswith('sad'):
+    await message.channel.send('https://tenor.com/bo7DB.gif')
+  
+  elif message.content.startswith('happy'):
+    await message.channel.send('https://tenor.com/6mBn.gif')
+
+  elif message.content.startswith('finally'):
+    await message.channel.send('https://tenor.com/RjQP.gif')
+  
+  elif message.content.startswith('lol'):
+    await message.channel.send('https://tenor.com/bwfW2.gif')
+ 
+  elif message.content.startswith("don't"):
+    await message.channel.send('https://tenor.com/KJec.gif')
+  
+  elif message.content.startswith('bad'):
+    await message.channel.send('https://tenor.com/bcKEK.gif')
+
+  elif message.content.startswith('good'):
+    await message.channel.send('https://tenor.com/EtKa.gif')
+  
+  elif message.content.startswith('all the best'):
+    await message.channel.send('https://tenor.com/bjClk.gif')
+
+  elif message.content.startswith("good job"):
+    await message.channel.send('https://tenor.com/28e5.gif')
+  
+  elif message.content.startswith('thanks'):
+    await message.channel.send('https://tenor.com/bqtwx.gif')
+
+  elif message.content.startswith('ok'):
+    await message.channel.send('https://tenor.com/wqTz.gif')
+
+  elif message.content.startswith('awesome'):
+    await message.channel.send('https://tenor.com/9owc.gif')
+
+
+  
+keep_alive()
+client.run(os.environ['token'])
