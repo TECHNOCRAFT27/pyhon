@@ -48,11 +48,7 @@ def take_command():
 # phono number
 contact_list = {
     'lalit': ' +91 76201 85906',
-    'sudarshan':'+91 74992 01573',
-    'shadab':'+91 89838 45593',
-    'Aditya s1':'91 72193 35147',
-    'Parth s1':'91 98228 01222',
-    'Rushikesh S1':'91 90960 99785'
+   
    }
 # phono number
 # languages
